@@ -2245,7 +2245,10 @@
       "name": "eth_callBundle",
       "id": "1cc0cba5-d2af-4ff1-953e-e43c12cabefb",
       "protocolProfileBehavior": {
-        "disableBodyPruning": true
+        "disableBodyPruning": true,
+        "disabledSystemHeaders": {
+          "user-agent": true
+        }
       },
       "request": {
         "method": "POST",
