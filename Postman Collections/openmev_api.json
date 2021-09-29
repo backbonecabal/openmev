@@ -2240,6 +2240,20 @@
         "url": null
       },
       "response": []
+    },
+    {
+      "name": "eth_callBundle",
+      "id": "1cc0cba5-d2af-4ff1-953e-e43c12cabefb",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": "",
+        "description": "eth_callBundle can be used to simulate a bundle against a specific block number, including simulating a bundle at the top of the next block. "
+      },
+      "response": []
     }
   ]
 }
