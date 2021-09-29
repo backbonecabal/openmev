@@ -2250,6 +2250,15 @@
       "request": {
         "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_callBundle\",\n  \"params\": [\n    {\n      txs,               \n      blockNumber,       \n      stateBlockNumber,  \n      timestamp,      \n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": "",
         "description": "eth_callBundle can be used to simulate a bundle against a specific block number, including simulating a bundle at the top of the next block. "
       },
