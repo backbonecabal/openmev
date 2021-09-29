@@ -2178,6 +2178,15 @@
       "request": {
         "method": "POST",
         "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_sendBundle\",\n  \"params\": [\n    {\n      txs,               \n      blockNumber,       \n      minTimestamp,      \n      maxTimestamp,      \n      revertingTxHashes, \n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
         "url": ""
       },
       "response": []
