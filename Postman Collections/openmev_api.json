@@ -2085,61 +2085,6 @@
       "description": "> **Note**\n>\n> Methods with an equivalent [GraphQL](https://besu.hyperledger.org/en/stable/HowTo/Interact/APIs/GraphQL) query include a GraphQL\n    request and result in the method example. The parameter and result descriptions apply to the\n    JSON-RPC requests. The GraphQL specification is defined in the [schema](https://github.com/hyperledger/besu/blob/master/ethereum/api/src/main/resources/schema.graphqls)."
     },
     {
-      "name": "healthcheck",
-      "id": "08bbec78-e383-446f-9a03-c00ee1ff8fc3",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"eth_chainId\",\n    \"params\": [],\n    \"id\": 1\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": "http://{{rpc-http-host}}:{{rpc-http-port}}",
-        "description": "Returns the [chain ID](https://besu.hyperledger.org/en/stable/Concepts/NetworkID-And-ChainID).\n\n#### Parameters\n\nNone\n\n#### Returns\n\n`result` : *quantity* - Chain ID, in hexadecimal."
-      },
-      "response": [
-        {
-          "id": "dfec93e4-9246-40c0-9188-a9bd2debe64a",
-          "name": "liveness",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Content-Type",
-                "name": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": "https://api.staging.sushirelay.com/v1"
-          },
-          "code": 200,
-          "_postman_previewlanguage": "json",
-          "header": null,
-          "cookie": [],
-          "responseTime": null,
-          "body": "{\n    \"jsonrpc\": \"2.0\",\n    \"id\": 51,\n    \"result\": \"0x7e2\"\n}"
-        }
-      ]
-    },
-    {
       "name": "mev_peerCount",
       "id": "1b1adfaf-7c38-4c51-95f2-20d75af36dde",
       "protocolProfileBehavior": {
