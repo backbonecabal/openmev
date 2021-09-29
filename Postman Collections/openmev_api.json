@@ -2204,6 +2204,29 @@
         "description": "Healthcheck for RPC Endpoint Livenesss State"
       },
       "response": []
+    },
+    {
+      "name": "eth_sendBundle",
+      "id": "19f1c5fc-2f06-49b1-83df-90bfc5e1b7bf",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_sendBundle\",\n  \"params\": [\n    {\n      txs,               \n      blockNumber,       \n      minTimestamp,      \n      maxTimestamp,      \n      revertingTxHashes, \n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "",
+        "description": "## eth_sendBundle \n\nThis RPC Method has the following payload format\n\n Array[String], A list of signed transactions to execute in an atomic bundle\n\n String, a hex encoded block number for which this bundle is valid on\n\n (Optional) Number, the minimum timestamp for which this bundle is valid, in seconds since the unix epoch\n\n (Optional) Number, the maximum timestamp for which this bundle is valid, in seconds since the unix epoch\n\n (Optional) Array[String], A list of tx hashes that are allowed to revert"
+      },
+      "response": []
     }
   ]
 }
