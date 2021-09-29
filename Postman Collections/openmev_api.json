@@ -2108,20 +2108,27 @@
       "response": [
         {
           "id": "dfec93e4-9246-40c0-9188-a9bd2debe64a",
-          "name": "eth_chainId",
+          "name": "liveness",
           "originalRequest": {
-            "method": "POST",
-            "header": [],
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"jsonrpc\": \"2.0\",\n    \"method\": \"eth_chainId\",\n    \"params\": [],\n    \"id\": 1\n}",
+              "raw": "",
               "options": {
                 "raw": {
                   "language": "json"
                 }
               }
             },
-            "url": "http://{{rpc-http-host}}:{{rpc-http-port}}"
+            "url": "https://api.staging.sushirelay.com/v1"
           },
           "code": 200,
           "_postman_previewlanguage": "json",
@@ -2241,6 +2248,20 @@
         "header": [],
         "url": "",
         "description": "Reported Version of the Client"
+      },
+      "response": []
+    },
+    {
+      "name": "check_liveness",
+      "id": "b84d6024-179d-44c1-b0cb-9cae1b2924aa",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "https://api.staging.sushirelay.com/v1",
+        "description": "Healthcheck for RPC Endpoint Livenesss State"
       },
       "response": []
     }
