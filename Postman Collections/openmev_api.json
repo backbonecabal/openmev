@@ -2183,20 +2183,6 @@
       "response": []
     },
     {
-      "name": "mev_protocolVersion",
-      "id": "bad74671-2f4d-43af-9023-3c6ff27c7fa5",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "method": "GET",
-        "header": [],
-        "url": "",
-        "description": "Reported Version of the Client"
-      },
-      "response": []
-    },
-    {
       "name": "check_liveness",
       "id": "b84d6024-179d-44c1-b0cb-9cae1b2924aa",
       "protocolProfileBehavior": {
