@@ -2229,7 +2229,7 @@
       "response": []
     },
     {
-      "name": "New Request",
+      "name": "flashbots_getUserStats",
       "id": "80c264d7-13e9-4112-8172-25d55ab6800e",
       "protocolProfileBehavior": {
         "disableBodyPruning": true
