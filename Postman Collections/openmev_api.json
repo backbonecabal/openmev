@@ -53,7 +53,7 @@
           "mode": "raw",
           "raw": "{\"jsonrpc\":\"2.0\",\"method\":\"eth_getBalance\",\"params\":[\"0xFE3B557E8Fb62b89F4916B721be55cEb828dBd73\",\"latest\"],\"id\":1}"
         },
-        "url": "http://localhost:32777/jsonrpc"
+        "url": "https://api.staging.sushirelay.com/v1"
       },
       "response": []
     },
