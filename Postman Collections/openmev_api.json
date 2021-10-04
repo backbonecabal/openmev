@@ -2,6 +2,7 @@
   "info": {
     "_postman_id": "2218bc61-1b7e-41af-824c-287c283f3548",
     "name": "OpenMEV",
+    "description": "## OpenMEV API\n\n[see the documentation here docs.openemev.org](https://openmev.vercel.app/)\n\n**Note**:\nMethods with an equivalent mev_* query include a specific reference client. These requests and their results are shown in their respective method example. The parameter and result descriptions apply to all JSON-RPC requests.\n\n[Manifold Finance Telegram](https://t.me/manifoldfinance)",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
   },
   "item": [
