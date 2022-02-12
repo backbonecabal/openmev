@@ -197,5 +197,35 @@
       },
       "response": []
     }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": {
+      "value": "{{$guid}}",
+      "key": "X-Flashbots-Signature",
+      "in": "header"
+    }
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "id": "f713212d-0b8e-4e5b-8898-e9dbc5d63396",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "id": "3bb7f98b-a47a-4181-8cc4-3c7b06ddb62a",
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
   ]
 }
