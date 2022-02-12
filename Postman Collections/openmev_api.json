@@ -182,14 +182,14 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_callBundle\",\n  \"params\": [\n    {\n      txs,               \n      blockNumber,       \n      stateBlockNumber,  \n      timestamp,      \n    }\n  ]\n}",
+          "raw": "{\n  \"jsonrpc\": \"2.0\",\n  \"id\": 1,\n  \"method\": \"eth_callBundle\",\n  \"params\": [\n      \"txs\",               \n      \"blockNumber\",       \n      \"stateBlockNumber\",  \n      \"timestamp\"\n  ]\n}",
           "options": {
             "raw": {
               "language": "json"
             }
           }
         },
-        "url": "",
+        "url": "https://api.sushirelay.com/v1",
         "description": "eth_callBundle can be used to simulate a bundle against a specific block number, including simulating a bundle at the top of the next block. "
       },
       "response": []
