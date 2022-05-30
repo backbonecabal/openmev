@@ -36,7 +36,7 @@
 					"mode": "raw",
 					"raw": "{\"jsonrpc\":\"2.0\",\"method\":\"eth_blockNumber\",\"params\":[],\"id\":1}"
 				},
-				"url": "https://api.staging.sushirelay.com/v1"
+				"url": "https://api.sushirelay.com/v1"
 			},
 			"response": []
 		},
